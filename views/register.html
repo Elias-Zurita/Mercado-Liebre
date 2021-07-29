@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport"content="width=device-width">
+        <h1><title Mercado Liebre></title></h1>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <link href="\css\normalize.css">
+        <link rel="stylesheet" href="\css\styles.css">
+        <script src="https://kit.fontawesome.com/d4ee5988c7.js" crossorigin="anonymous"></script>
+
+    </head>
+<body>
+<header class="main-header">
+        <div class="main-header-top-bar">
+            <div class="encabezadoMobile">
+<img src = "\images\logo-mercado-liebre.svg" alt= "Logo de Mercado Liebre" class="logo">
+
+<input type="search" placeholder="Buscar productos, marcas y más"> <i class="fas fa-search"></i> 
+</div>
+
+<h2 class="copy-header"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</h2>
+</div>
+
+<nav class="main-header-bottom-bar">
+<ul class="left-navbar" type="None">
+    <li><a href="">Ofertas</a></li>
+    <li><a href="">Tiendas Oficiales</a></li>
+    <li><a href="">Vender</a></li>
+    <li><a href="">Ayuda</a></li>
+</ul>
+
+<ul class="right-navbar" type="None">
+    <li><a href="\register.html">Crea tu cuenta <i class="far fa-id-card"></i></a></li>
+    <li><a href="\login.html">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
+    <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+</ul>
+</nav>
+
+<a href="" class="burger-menu">   
+    <i class="fas fa-bars"></i>
+</a>
+
+<img src = "\images\img-home-banner.jpg" alt= "banner" class="banner">
+</header>
+
+<form action="/home.html" method="POST" class="formularioReg">
+
+<div class="control-formulario">
+<label for="nombreYapellido">Nombre y apellido</label>
+<input type="text" name="nombreYapellido" id="nombreYapellido" class="control-especifico">
+</div>
+
+<div class="control-formulario">
+<label for="nombreUsuario">Nombre de usuario</label>
+<input type="text" name="nombreUsuario" id="nombreUsuario" class="control-especifico">
+</div>
+
+<div class="control-formulario">
+<label for="fechaNacimiento">Fecha de Nacimiento</label>
+<input type="date" name="fechaNacimiento">
+</div>
+
+<div class="control-formulario">
+<label for="domicilio">Domicilio</label>
+<input type="text" name="domicilio" id="domicilio" class="control-especifico">
+</div>
+
+<div class="control-formulario">
+<label for="perfil">Perfil del usuario
+<input type="radio" name="comprador" id="perfil">Comprador
+<input type="radio" name="vendedor" id="perfil">Vendedor</label>
+</div>
+
+<div class="control-formulario">
+<label for="categoriasInteres" class="categorias">Categorías de interés
+
+<input type="checkbox" name="categoriasInteres">Electro
+<input type="checkbox" name="categoriasInteres">Moda
+<input type="checkbox" name="categoriasInteres">Hogar
+<input type="checkbox" name="categoriasInteres">Juguetería
+<input type="checkbox" name="categoriasInteres">Vida sana </label>
+</div>
+
+<div class="control-formulario">
+<label for="imagenPerfil">Foto de usuario
+<input type="file" name="imagenPerfil" accept=".jpg, .png" class="separacion"></label>
+
+<div>
+<label for="contraseña" class="separacion">Contraseña</label>
+<input type="password" name="contraseña" id="contraseña" class="control-especifico" placeholder="**********">
+</div>
+
+<div></div>
+<label for="ConfirmaContraseña">Confirmar contraseña</label>
+<input type="password" name="ConfirmaContraseña" id="ConfirmaContraseña" class="control-especifico" placeholder="**********">
+</div>
+
+<div>
+<button type="submit" class="botones">Enviar</button>
+</div>
+
+<div>
+<button type="Reset" class="botones">Borrar todo</button>
+</div>
+
+</form>
+</body>
+</html>

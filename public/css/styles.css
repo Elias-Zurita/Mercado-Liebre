@@ -1,0 +1,146 @@
+* {box-sizing: border-box;}
+
+body{
+font-family: 'Roboto', sans-serif; 
+}
+.main-header{ background-color: #EAC926; padding: 20px; text-align: left; font-size: 12px; width: 100vw}
+.logo {width: 200px;}
+.copy-header {text-align: center; font-weight: 400; font-size: 12px; font-family: "roboto", sans-serif}
+
+h3 {font-size: 24px;}
+
+.banner { width:100vw; margin-top: 10px;}
+
+main {width: 100vw; align-items: center; background-color: #ebebeb;
+justify-content: center; margin: auto;}/* ajusta el main a 90% de tamaño de la pagina y centra ajustadonse con los margenes*/
+
+.articulos {margin: 10px; background-color: white; padding: 15px}
+.promo {border-top: solid 1px #ebebeb; background-color: white;margin: 10px;padding: 15px}
+.fa-truck {color:#39b54a;}
+
+.precios {font-size: 18px;}
+.descuento {font-size:16px; color: #39b54a}
+.descripcion {font-size:16px; color: #666}
+
+.left-navbar {margin: 0; padding: 0;}      /*     */
+.right-navbar {margin: 0; padding: 0;}     /*     */
+
+.burger-menu {color: #ebebeb; text-align: center;
+   background-color: #03264C; display: block; 
+   max-width: 50px; padding: 15px 0; border-radius: 8px;
+font-size: 20px; margin: auto;}
+
+.precios-descuento{display: flex;align-items: flex-end;} /* vuelve el precio y el descuento como un contenedor flex para poder moverlo */
+.precios,.descuento { display: block; text-align: left;} /* pone el precio al lado del descuento y los alinea a la izquierda */
+.precios {flex-grow: 0.3} /* el precio ocupara el 30% del espacio */
+.descuento {flex-grow: 0.7} /* el descuento ocupara el 70% del espacio */
+.descripcion {text-align: left;} /* alinea la descripcion a la izquierda */
+.foto {width: 100%;}
+.articulos {box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 )}  /*aplica efecto de sombreado a los bordes */
+
+footer {text-align: center;}
+.fa-credit-card {color:#03264C; font-size: 2em;}
+.fa-gift {color:#03264C; font-size: 2em}
+.fa-user-shield {color:#03264C; font-size: 2em}
+.negrita {font-weight: bold;}
+
+.descripcion{display: none;} /* oculta la descripcion */
+.main-header-bottom-bar{display: none;} /* oculta la seccion main-header-bottom-bar del header */
+
+.formularioReg{ font-family: 'Roboto', sans-serif; background-color: #ebebeb; font-size: 15px; padding: 22px 18px;}
+
+.formularioLog{ font-family: 'Roboto', sans-serif; background-color: #ebebeb; font-size: 15px; padding: 20px 15px;}
+.separacion{margin-bottom: 15px;}
+
+.control-formulario{ margin-bottom: 15px;}
+
+.categorias input{display: block; margin-bottom: 10px;}
+
+.control-formulario label{margin-bottom: 5px; font-style: italic; display: block; font-weight: bold;}
+
+.control-especifico {width: 100%; padding: 8px; }
+
+.login:hover{background-color: #0022AA; font-size: 15px; color:#ebebeb; border: none; padding: 5px 10px; border-radius: 5px; margin-bottom: 10px;}
+
+.botones {background-color: #03264C; font-size: 15px; color:#ebebeb; border: none; padding: 5px 10px; border-radius: 5px; margin-bottom: 10px;}
+
+.fa-credit-card:hover{color: #EAC926;}
+.fa-gift:hover{color: #EAC926;}
+.fa-user-shield:hover{color: #EAC926;}
+@media (min-width: 361px){    /* mayores de 361px como tablets (deja de ser Mobile y pasa a ser Tablets) */
+   main {width: 90%; justify-content: center; margin: auto;} /* ajusta el main a 90% de tamaño de la pagina y centra ajustadonse con los margenes*/
+   .main-header-top-bar{display: flex; margin: auto; justify-content: space-between; align-items: center;} /*El logo y el comprá en cuotas se separan con un espacio y se ponen una al lado de la otra*/
+   .main-header-top-bar, .main-header-bottom-bar {max-width: 361px; margin: auto}
+   .copy-header{max-width: 350px; text-align: right; font-size: 13px; font-weight: 200;} /* El comprá en cuotas se alinea a la derecha y ocupa la mitad aprox del ancho de la tablet */
+   .descripcion{ display: block;}    /* muestra la descripcion en forma de bloque (alargado) */
+   .articulos {box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 )}  /*aplica efecto de sombreado a los bordes */
+   .main-header-bottom-bar {display: flex; margin: auto ; justify-content: space-between; margin-top: 30px; } /* muestra el main-header-bottom-bar justificado y con espacio entre medio */ 
+   .main-header-bottom-bar ul{display: flex;}/*pone un elemento al lado del otro*/
+   .main-header-bottom-bar li{margin: 0 5px;} /* le da un margen lateral de 5px */
+   .main-header-bottom-bar a {text-decoration: none; color: #222222; font-size: 11px;} /* altera los hipervinculos (etiqueta <a>)*/
+   .burger-menu {display: none;} /* oculta el menu hamburguesa del header */
+   .precios-descuento{display: flex;align-items: flex-end;} /* vuelve el precio y el descuento como un contenedor flex para poder moverlo */
+   .precios,.descuento { display: block; text-align: left;} /* pone el precio al lado del descuento y los alinea a la izquierda */
+   .precios {flex-grow: 0.3} /* el precio ocupara el 30% del espacio */
+   .descuento {flex-grow: 0.7} /* el descuento ocupara el 70% del espacio */
+   .descripcion {text-align: left;} /* alinea la descripcion a la izquierda */
+   .foto {width: 100%;}
+   .articulos {box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 )}  /*aplica efecto de sombreado a los bordes */
+   .contenedorTablet1 {display: flex;}
+   .contenedorTablet2 {display: flex;}
+   .contenedorTablet3 {display: flex;}
+   .contenedorTablet4 {display: flex;}
+}
+
+@media (min-width: 769px){    /* mayores de 361px como Desktop (deja de ser Tablet y pasa a ser Desktop) */
+   main {width: 90%; justify-content: center; margin: auto;} /* ajusta el main a 90% de tamaño de la pagina y centra ajustadonse con los margenes*/
+   .main-header-top-bar{display: flex; margin: auto; justify-content: space-between; align-items: center;} /*El logo y el comprá en cuotas se separan con un espacio y se ponen una al lado de la otra*/
+   .main-header-top-bar, .main-header-bottom-bar {max-width: 769px; margin: auto}
+   .copy-header{max-width: 350px; text-align: right; /* El comprá en cuotas se alinea a la derecha y ocupa la mitad aprox del ancho del desktop*/
+      font-size: 15px; font-weight: 300} /* El comprá en cuotas toma se pasa a 15px y 300 de grosor en desktop*/
+   .descripcion{ display: block;}    /* muestra la descripcion en forma de bloque (alargado) */
+   .articulos {box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 )}  /*aplica efecto de sombreado a los bordes */
+.main-header-bottom-bar {display: flex; margin: auto; justify-content: space-between; margin-top: 40px;} /* muestra el main-header-bottom-bar y lo baja 40px */ 
+.main-header-bottom-bar ul{display: flex;}/*pone un elemento al lado del otro*/
+.main-header-bottom-bar li{margin: 0 5px;} /* le da un margen lateral de 5px */
+.main-header-bottom-bar a {text-decoration: none; color: #222222; font-size: 14px} /* altera los hipervinculos (etiqueta <a>)*/
+.burger-menu {display: none;} /* oculta el menu hamburguesa del header */
+.precios-descuento{display: flex;align-items: flex-end;} /* vuelve el precio y el descuento como un contenedor flex para poder moverlo */
+.precios,.descuento { display: block; text-align: left;} /* pone el precio al lado del descuento y los alinea a la izquierda */
+.precios {flex-grow: 0.3} /* el precio ocupara el 30% del espacio */
+.descuento {flex-grow: 0.7} /* el descuento ocupara el 70% del espacio */
+.descripcion {text-align: left;} /* alinea la descripcion a la izquierda */
+.foto {width: 100%;}
+.articulos {box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 )}  /*aplica efecto de sombreado a los bordes */
+.contenedorDesktop1 {display: flex;} /* pone los articulos uno al lado del otro */
+.contenedorDesktop2 {display: flex;}
+.contenedorDesktop3 {display: flex; justify-content: center;}
+.copyrightDesktop {text-align: left; margin: 0;}
+}
+
+@media (min-width: 1200px){
+   main {width: 90%; justify-content: center; margin: auto;} /* ajusta el main a 90% de tamaño de la pagina y centra ajustadonse con los margenes*/
+   .main-header-top-bar, .main-header-bottom-bar {
+      max-width: 1200px; margin: auto}
+      .main-header-top-bar {align-items: center;}
+      .main-header-bottom-bar li{margin: 0 10px;} /* le da un margen lateral de 10px */
+      .main-header-bottom-bar a{font-size: 19px} /* le da 19 px a todo el main header bottom bar */
+      .main-header-bottom-bar {margin-top: 50px;} /* baja los textos de el logo */
+      .copy-header{max-width:none; font-size: 22px; font-weight: 400;}  
+      .logo {width: 250px}
+      .precios-descuento{display: flex; align-items: flex-end;} /* vuelve el precio y el descuento como un contenedor flex para poder moverlo */
+      .precios,.descuento { display: block; text-align: left;} /* pone el precio al lado del descuento y los alinea a la izquierda */
+      .precios {flex-grow: 0.3} /* el precio ocupara el 30% del espacio */
+      .descuento {flex-grow: 0.7} /* el descuento ocupara el 70% del espacio */
+      .descripcion {text-align: left;} /* alinea la descripcion a la izquierda */
+      .foto {width: 100%;}
+      .articulos {box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 )}  /*aplica efecto de sombreado a los bordes */
+      .contenedorDesktop1 {display: flex;} /* pone los articulos uno al lado del otro */
+      .contenedorDesktop2 {display: flex;}
+      .contenedorDesktop3 {display: flex; justify-content: center;}
+      .copyright {text-align: left; margin: 0;}
+   }
+
+      .promo i{ display: block ;font-size: 16px; padding: 5px; width: 30px ;
+          height: 30px ; border: 1 px solid #39b54a ; background-color: #FFF;
+           border-radius: 50% ;position: absolute ; right: 20px ;top: -15px ;} /* NO NOS SALIO EL CAMION!!*/
